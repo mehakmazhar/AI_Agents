@@ -35,26 +35,26 @@ learning agents improve performance over time by gathering feedback, much like
 humans learn from mistakes and experiences to refine their skills. This relationship highlights how AI systems emulate human cognitive functions to solve problems,
 automate tasks, and enhance decision-making in real-world applications.
 
-Real-World Behaviors Reflecting AI Agent Principles
-1. Reflex Agent (Immediate, automatic responses)
+# Real-World Behaviors Reflecting AI Agent Principles
+**1. Reflex Agent (Immediate, automatic responses)**
 Pulling your hand away after touching a hot object.
 Blinking when something moves rapidly toward your face.
 Ducking when a ball is thrown unexpectedly at you.
 Swerving your car to avoid an obstacle on the road.
 Sneezing when exposed to dust or allergens.
-2. Model-Based Agent (Using past knowledge to inform decisions)
+**2. Model-Based Agent (Using past knowledge to inform decisions)**
 Looking outside or checking the weather app before dressing for the day.
 Turning on headlights when driving in a tunnel because you know it will be dark.
 Remembering a store’s layout to quickly find an item on a return visit.
 Closing windows when it starts to rain based on previous experiences.
 Adjusting room temperature by using the thermostat when feeling cold or hot.
-3. Goal-Based Agent (Actions aimed at achieving specific goals)
+**3. Goal-Based Agent (Actions aimed at achieving specific goals)**
 Planning a study schedule to pass an upcoming exam.
 Organizing a shopping list to save time and avoid unnecessary purchases.
 Mapping a route to reach a new location efficiently.
 Scheduling workouts to achieve fitness goals.
 Saving money for a specific purpose, like a vacation or a car.
-4. Utility-Based Agent (Maximizing overall satisfaction or utility)
+**4. Utility-Based Agent (Maximizing overall satisfaction or utility)**
 Choosing between two jobs by considering salary, location, and work-life
 balance.
 Selecting a phone by weighing features like camera quality, battery life, and
@@ -63,16 +63,27 @@ Picking a restaurant based on food quality, ambiance, and cost.
 Deciding which movie to watch by balancing reviews and your mood.
 Choosing between walking or driving based on distance, time, and weather
 conditions.
-
-5. Learning Agent (Improving actions based on feedback)
+**5. Learning Agent (Improving actions based on feedback)**
 Learning to bake a cake better after receiving feedback from previous attempts.
 Adjusting study techniques after noticing which methods improve test scores.
 Refining a presentation style after audience feedback.
 Improving navigation skills after getting lost and finding a better route.
 Learning a new language through practice and correcting mistakes over time.
-2.3 Working of Agents
+
+# Working of Agents
 When designing any intelligent agent system, it is essential to create three main
 components:
-1. The Environment:
+**1. The Environment:**
 ○ The external system with which the agent interacts. It provides percepts
 (sensory inputs) and responds to the agent’s actions.
+
+```python
+class Environment:
+    def __init__(self, initial_state):
+        self.initial_state = initial_state  # Initial state could be fixed or random
+
+    def get_percept(self):
+        # Initial condition of environment, that would be perceived by agent
+        pass
+```
+
